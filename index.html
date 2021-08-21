@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+    <div class="outer-div">
+        <div class="left-div">
+            <button id="name-button">Change Name</button>
+            <div class="name" id="name">
+                <form class="name-form" id="name-form" action="#">
+                    <input class="name-input" type="text" id="name-input" placeholder="Type your name here...">
+        
+                    <button type="submit" class="name-button">Add</button>
+                </form>  
+            </div>
+            <br>
+            <button id="change-background-button">Change Background</button>
+            <div class="change-background" id="change-background">
+                <div class="background" id="background">
+                    <form class="background-form" id="background-form" action="#">
+                        <input class="background-input" type="text" id="background-input" placeholder="Enter image url...">
+                        <button type="submit" class="background-button">Submit</button>
+                    </form>  
+                </div>
+            </div>
+        </div> 
+        <div class="right-div">
+            <form class="to-do-form">
+                <button type="submit" class="add-button">Add</button>
+                <input type="text" class="to-do-input" placeholder="Add a Task">
+            </form>
+            <ul class="to-do-items">
+                <li class="item" data-key="1594003133171">
+                    <input class="checkbox" type="checkbox">
+                    Go to Gym
+                    <button class="delete-button">X</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="greeting-container">
+        <h2 class="greeting" id="greeting"></h2>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
